@@ -4,11 +4,12 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { FaHeart } from "react-icons/fa";
 
-import { Providers } from "./providers";
 
-import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
-import { Navbar } from "@/components/navbar";
+import { siteConfig } from "../config/site";
+import { fontSans } from "../config/fonts";
+import { Navbar } from "../components/navbar";
+
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: {
