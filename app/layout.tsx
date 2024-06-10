@@ -4,7 +4,6 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { FaHeart } from "react-icons/fa";
 
-
 import { siteConfig } from "../config/site";
 import { fontSans } from "../config/fonts";
 import { Navbar } from "../components/navbar";

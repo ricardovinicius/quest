@@ -4,10 +4,11 @@ import * as bcrypt from "bcrypt";
 import { InternalError, NotFoundError, UnauthorizedError } from "@/errors";
 import prisma from "@/lib/prisma";
 import { signJwtAccessToken } from "@/lib/jwt";
+import { LoginSchemaTypeProps } from "@/types";
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
+    const body: LoginSchemaTypeProps = await request.json();
 
     const user = await prisma.user.findUnique({
       where: {
